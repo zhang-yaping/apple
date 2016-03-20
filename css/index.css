@@ -1,0 +1,770 @@
+@font-face {
+	font-family:'Myriad Set Pro';
+	font-style:normal;
+	font-weight:100;
+	src:local('Myriad Set Pro'), url("../fonts/myriad-set-pro_text.woff") format("woff");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+article, aside, footer, header, nav, main, section, summary, details, hgroup, figure, figcaption {
+    display: block;
+}
+body{
+	font-family: "Myriad Set Pro","微软雅黑";
+	margin: 0;
+	padding: 0; 
+}
+ul,li,h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: normal;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+/*导航栏目开始*/
+.title-nav{
+	text-align: justify;
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    height: 44px;
+}
+.ff{
+	display: block;
+	height: 44px;
+	line-height: 40px;
+	max-width: 960px;
+	min-width: 728px;
+	margin: 0 auto;
+	padding: 0 20px;
+	overflow: hidden;
+	position: relative;
+	z-index: 4;
+}
+.ff li{
+	display: inline-block;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.ff>li>a{
+	color: white;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.ff:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.logo{
+	background: url(../img/logo.svg) 50% 0 no-repeat;
+	display: inline-block;
+	width: 1.25em;
+}
+.mac{
+	background: url(../img/mac.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 2em;
+}
+.ipad{
+	background: url(../img/ipad.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 2em;
+}
+.iphone{
+	background: url(../img/iphone.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 3em;
+}
+.watch{
+	background: url(../img/watch.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 2.75em;
+}
+.tv{
+	background: url(../img/TV.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 1.25em;
+}
+.music{
+	background: url(../img/music.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 2.5em;
+}
+.support{
+	background: url(../img/support.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 3.5625em;
+}
+.search{
+	background: url(../img/search.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 1.25em;
+}
+.bag{
+	background: url(../img/bag.svg)  50% 0  no-repeat;
+	display: inline-block;
+	width: 1.125em;
+}
+.ff li:hover{
+	opacity: 0.65;
+}
+.ff>li>a>span{
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+.title-nav .smallnav{
+	display: block;
+	position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+}
+.smallnav .ac-gn-menu{
+	position: absolute;
+	top: 0;
+	letter-spacing: 0;
+	width: 48px;
+	border: none;
+	z-index: 2;
+}
+.smallnav .ac-gn-item{
+	display: none;
+}
+.ac-gn-menu-label{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.ac-gn-menu-top,.ac-gn-menu-bottom{
+	width: 48px;
+	height: 48px;
+	z-index: 3;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.ac-gn-menu-top .ac-gn-menu-t{
+	width: 17px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	left: 16px;
+	z-index: 1;
+	top: 20px;
+}
+.ac-gn-menu-bottom .ac-gn-menu-b{
+	width: 17px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	left: 16px;
+	z-index: 1;
+	bottom: 20px;
+}
+.ac-gn-item.ac-gn-apple{
+	position: absolute;
+	left: 50%;
+	margin-left: -24px;
+	top: 0;
+	text-align: center;
+	z-index: 1;
+	width: 20px;
+	height: 48px;
+}
+.ac-gn-apple .ac-gn-apple-link{
+	height: 48px;
+	display: block;
+	background-size: 21px 48px;
+	background-image:url(../img/logo_small.svg); 
+	background-position: center center;
+}
+.ac-gn-apple-link .ac-gn-apple-text{
+	position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+.ac-gn-item.ac-gn-bag{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 18;
+    height: 48px;
+	padding: 0 16px;
+}
+.ac-gn-bag .ac-gn-bag-link{
+	height: 48px;
+	width: 18px;
+	display: block;
+	background-size: 19px 48px;
+	background-image:url(../img/bag_small.svg); 
+	background-position: center center;
+}
+.ac-gn-bag-link .ac-gn-bag-text{
+	position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+.smallnav .ac-gn-item:hover{
+	opacity: 0.65;
+}
+/*导航栏目结束*/
+.clearfix:after{
+	content: "";
+	width: 100%;
+	display: inline-block;
+	clear: both;
+	height: 0;
+}
+
+
+/*导航栏左侧下拉菜单开始*/
+input#ac-gn-menustate{
+	display:none;
+}
+input ~ .ac-gn-menu-label{
+	display: block;
+	position: relative;
+}
+.ac-gn-menu-label span{
+	transition:all 0.6s ease;
+}
+.ac-gn-list{
+	visibility: hidden;
+	transition:all 0.6s ease;
+	position: absolute;
+	left: 0;
+	top: 48px;
+	width: 100%;
+	transition:all 0.6s ease;
+	background:black;
+	padding-bottom: 100px;
+}
+.ac-gn-list li{
+	width: 100%;
+	height: 48px;
+	margin-top: 12px;
+	margin-top: 7px;
+	background: none;
+    padding: 0 48px;
+    box-sizing:border-box;
+    background-size: 37px 48px;
+}
+.ac-gn-list li a{
+	color: #fff;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    height: 48px;
+    background-position: left center;
+}
+.ac-gn-list li a span{
+	display: block;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	line-height: 48px;
+	font-size: 20px;
+
+}
+.ac-gn-list li:hover{
+	opacity: 0.65;
+}
+.ac-gn-list li .search .search1{
+    display: inline-block;
+    height: 44px;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    display: inline-block;
+    width: 1.25em;
+    float: left;
+    border: none;
+    height: 48px;
+    width: 50%;
+    margin-left: 25px;
+}
+.ac-gn-list li .search{
+	border-bottom: 1px solid #fff;
+}
+#ac-gn-menustate:checked ~ nav ul:nth-child(2){
+	visibility: visible;
+}
+#ac-gn-menustate:checked ~ nav label .ac-gn-menu-top:first-of-type{
+	transform:rotate(45deg);
+}
+#ac-gn-menustate:checked ~ nav label .ac-gn-menu-bottom:last-of-type{
+    transform: rotate(-45deg);
+} 
+#ac-gn-menustate:checked ~ nav label .ac-gn-menu-top .ac-gn-menu-t{
+	top:23px;
+}
+#ac-gn-menustate:checked ~ nav label .ac-gn-menu-bottom .ac-gn-menu-b{
+	bottom:23px;
+}
+ nav .smallnav .ac-gn-bag{
+ 	transition:all 0.6s ease;
+ }
+#ac-gn-menustate:checked ~ nav .smallnav .ac-gn-bag{
+	transform: translate3d(200px,0,0);
+}
+/*导航栏左侧下拉菜单结束*/
+
+/*banner开始*/
+.banner{
+	box-sizing: border-box;
+	width: auto;
+	height: 65%;
+	min-height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+.ban{
+	text-align: center;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-clip: content-box;
+	transition: transform 0.625s cubic-bezier(1,0,0,1);
+}
+.ban h1{
+	 font-size: 64px;
+    font-weight: 200;
+    line-height: 1.0625;
+}
+.banner .ban:nth-child(1) h2{
+     margin-bottom: 1em;
+     font-size: 24px;
+    line-height: 1.3542;
+    font-weight: 200;
+    margin: 0.5em 0 0 0;
+}
+.banner .ban:nth-child(2) h2{
+	font-size: 32px;
+    line-height: 1.125;
+    font-weight: 200;
+}
+.banner .ban:nth-child(2) ul li{
+    display: inline-block;
+    margin-top:10px;
+    line-height: 28px;
+}
+.banner .ban:nth-child(2) ul li a{
+	color: #08c;
+	font-size: 20px;
+}
+.banner .ban:nth-child(3) h2{
+	font-size: 42px;
+    line-height: 1.1429;
+    font-weight: 200;
+    margin-bottom: 0.5em;
+}
+.banner .ban:nth-child(3) ul li{
+    display: inline-block;
+    line-height: 28px;
+}
+.banner .ban:nth-child(3) ul li a{
+	color: #08c;
+	font-size: 20px;
+}
+.ban p{
+	margin: 0.5em 0 0 0; 
+}
+.ban p a{
+	 color: #08c;
+	 font-size: 20px;
+	 font-weight: 200;
+	 line-height: 1.4;
+}
+.banner .ban:nth-child(1){
+	background: url(../img/b9SPwzlR1UAAAAASUVORK5CYII=.png) no-repeat 0 -20px;
+	padding-top: 100px;
+}
+.banner .ban:nth-child(2){
+	background: url(../img/9k=.jpg) no-repeat 50% 200px;
+	padding-top: 50px;
+}
+.banner .ban:nth-child(3){
+	background: url(../img/2Q==.jpg) no-repeat 50% 44px;
+	padding-top:380px;
+}
+.btn_box{
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	left:0;
+	bottom: -3px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+}
+.btnbox{
+	width: 84px;
+	height: 8px;
+	display: inline-block;
+}
+.btnbox li{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #999;
+	float: left;
+	margin-left:15px;
+}
+.btn{
+	border: 1px solid #08C;
+	background-color:#ffffff;
+}
+.con{
+	height: 200px;
+}
+.con li{
+	width: 25%;
+	height: 200px;
+	float:left;
+}
+.con li a{
+	display: block;
+	height: 100%;
+    border-right: 2px solid #fff;
+	background-size:640px 200px;
+	font: 0/0 a;
+}
+.con1{
+	background: url(../img/promo_holiday_watch_large.jpg);
+	background-position: center center;
+}
+.con2{
+	background: url(../img/promo_startsomethingnew_iphone6s_large.jpg) no-repeat;
+	background-position: center center;
+}
+.con3{
+	background: url(../img/promo_ios93preview_large.jpg) no-repeat;
+	background-position: center center;
+}
+.con4{
+	background: url(../img/promo_macbook_large.jpg) no-repeat;
+	background-position: center center;
+}
+
+
+
+/*footer开始*/
+.quanping{
+	background: #f2f2f2;
+	width: 100%;
+}
+#ac-footer{
+	font-size: 12px;
+	line-height: 1.6667;
+	font-weight: 400;
+	letter-spacing: normal;
+	background: #f2f2f2;
+	max-width: 1024px;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+    margin-top: -20px;
+}
+#ac-footer #ac-content{
+	margin: 0 auto;
+	padding: 0 22px;
+	max-width: 980px;
+	color:#666;
+}
+#ac-content .ac-label{
+	display: inline-block;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+#ac-content .footer-nav{
+	font-size: 12px;
+	line-height: 1.6667;
+	font-weight: 400;
+	position: relative;
+	z-index: 1;
+	padding-top: 20px;
+	background: none;
+	width: 100%;
+}
+.footer-nav:before{
+	content: "";
+	display: table;
+}
+.footer-nav .footer-nav-conbox{
+	width: 20%;
+	position: relative;
+    z-index: 1;
+    min-height: 2px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.footer-input{
+	display: none;
+}
+.footer-con{
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	min-height: 2px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.yincangbiaoti .ac-gf-directory-column-section-title {
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #333;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.footer-con .footer-list{
+	list-style: none;
+    margin-right: 20px;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+.footer-list .ac-section-item{
+    width: 100%;
+}
+.ac-section-item .ac-section-link{
+	color: #666;
+    text-decoration: none;
+    display: inline;
+}
+.ac-section-item .ac-section-link:hover{
+	color: #000;
+	text-decoration: underline;
+}
+.ac-gf-footer {
+    color: #999;
+    padding: 20px 0 24px;
+    position: relative;
+    width: 100%;
+}
+.ac-gf-footer .ac-footer-shop{
+	border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+}
+.ac-footer-shop a{
+	color: #08c;
+}
+section .ac-gf-footer-legal:before{
+	content: "";
+	display: table;
+}
+.ac-gf-footer-legal-links{
+	display: block;
+	float: left;
+}
+.ac-gf-footer-legal-copyright{
+    max-height: 9999px;
+    margin-right: 26px;
+    float: left;
+}
+.ac-gf-footer-legal-link{
+	border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+}
+.ac-gf-footer-legal-link:hover{
+	text-decoration: underline;
+}
+.f1{
+	padding-top: 20px;
+}
+.ac-gf-footer-localce{
+	float: right;
+}
+.ac-gf-footer-localce-flag{
+	background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/16.png");
+    cursor: pointer;
+    float: left;
+    margin-top: 1px;
+    padding-right: 5px;
+}
+/*footer结束*/
+/*响应式布局部分开始*/
+@media(max-width:1068px){
+	.con li{
+		width: 50%;
+	}
+}
+@media(max-width:735px){
+	.ac-gn-list {
+    	visibility: hidden;
+	}
+	.title-nav{
+		height: 48px;
+	}
+	.title-nav .ff{
+		display: none;
+	}
+	.title-nav .smallnav{
+		display: block;
+	    background: rgba(0,0,0,1);
+	}
+	.smallnav .ac-gn-item{
+		display: block;
+	}
+	.footer-nav .footer-nav-conbox{
+		width: 100%;
+	}
+	.footer-nav-con{
+		height: 38px;
+	}
+	.f1{
+		padding-top: 0;
+	}
+	.footer-list{
+		display: none;
+	}
+	.yincangbiaoti .ac-gf-directory-column-section-title{
+		height: 38px;
+		line-height: 38px;
+		border-bottom: 1px solid #E3E3E3;
+	}
+	.yincangbiaoti .ac-gf-directory-column-section-title:after{
+		content: "+";
+	    float: right;
+	    cursor:pointer;
+	}
+	#ac-footer #ac-content{
+		padding: 0 16px;
+	}
+	.ac-gf-footer-localce{
+		margin-top: 5px;
+		width: 100%;
+	}
+	.ac-gf-footer-legal-copyright{
+		width: 100%;
+	}
+	.ac-section-item .ac-section-link {
+	    color: #666;
+	    text-decoration: none;
+	    display: block;
+	    width: 100%;
+	    padding: 0 14px;
+	    font-size: 12px;
+	}
+	.footer-list .ac-section-item {
+		height: 30px;
+		line-height: 30px;	    
+	}
+	#smallul{
+		display: block;
+	}
+	#bigul{
+		display: none;
+	}
+	.con li{
+		width: 100%;
+	}
+	.con1{
+	background: url(../img/promo_holiday_watch_small.jpg) no-repeat;
+	background-position: center center;
+   }
+	.con2{
+		background: url(../img/promo_startsomethingnew_iphone6s_small.jpg) no-repeat;
+		background-position: center center;
+	}
+	.con3{
+		background: url(../img/promo_ios93preview_small.jpg) no-repeat;
+		background-position: center center;
+	}
+	.con4{
+		background: url(../img/promo_macbook_small.jpg) no-repeat;
+		background-position: center center;
+	}
+	.banner .ban:nth-child(1){
+	background: url(../img/vNfXudGAAAAAElFTkSuQmCC.png) no-repeat 0 300px;
+	padding-top: 100px;
+	}
+	.banner .ban:nth-child(2){
+		background: url(../img/Z.jpg) no-repeat 50% 250px;
+		padding-top: 100px;
+	}
+	.banner .ban:nth-child(3){
+		background: url(../img/home_hero_apple_tv_landscape_small.jpg) no-repeat 50% 44px;
+		padding-top:350px;
+	}
+
+}
+/*脚步下拉菜单开始*/
+#ac-gf-directory-column-section-title{
+	cursor: pointer;
+}
+#ac-gf-directory-column-section-state-products:checked ~ 
+div .footer-list,#ac-gf-directory-column-section-state-storeservices:checked ~ div .footer-list,#ac-gf-directory-column-section-state-education:checked ~ 
+div .footer-list,#ac-gf-directory-column-section-state-business:checked ~ 
+div .footer-list,#ac-gf-directory-column-section-state-accounts:checked ~ 
+div .footer-list,#ac-gf-directory-column-section-state-responsibility:checked ~ 
+div .footer-list,#ac-gf-directory-column-section-state-about:checked ~ 
+div .footer-list{
+	width: 100%;
+	height: auto;
+	display: block;
+	background: #f2f2f2;
+}
+#ac-gf-directory-column-section-state-products:checked + .footer-con h3:after,#ac-gf-directory-column-section-state-storeservices:checked + .footer-con h3:after,#ac-gf-directory-column-section-state-education:checked + .footer-con h3:after,#ac-gf-directory-column-section-state-busines:checked + .footer-con h3:after,#ac-gf-directory-column-section-state-accounts:checked + .footer-con h3:after:after,#ac-gf-directory-column-section-state-responsibility:checked + .footer-con h3:after,#ac-gf-directory-column-section-state-about:checked + .footer-con h3:after{
+	transform: rotateZ(45deg);
+	transition:all 0.6s ease;
+}
+/*脚步下拉菜单结束*/
